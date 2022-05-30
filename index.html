@@ -39,12 +39,11 @@
   <div class="container">
     <img src="rafael.jpg" alt="Rafael Carvalho" loading="lazy">
     <h1 class="rafael-carvalho" style="color:white;">RAFAEL CARVALHO</h1>
-    <p class="lead" style="color:white !important;">Web Developer - System Analyst - Student 
-    </p>            
+    <p class="lead" style="color:white !important;">Web Developer - System Analyst - Information Technician</p>               
   </div>
 </section>
 
-<section id="sobre" class="py-5 text-center">
+<section id="sobre" class="py-4 text-center">
   <div class="container">
     <h2 class="title-section"><u>SOBRE MIM</u></h2>
     <p class="lead text-white">Olá meu nome é John e estou no mercado de games a mais de 4 anos, tendo
@@ -75,13 +74,13 @@
     }
 
 
-    #home {height: 500px;}
-    #sobre, #projetos {
-      background: #131415;
+    #home {height: 500px;}#contato {height: 220px;}
+    #sobre, #projetos, .accordion-item, .accordion-button {
+      background: #131415 !important;
       /*background: #2070bf;*/
       
     }
-    #contato {height: 250px;}
+    
 
     .container img {
       border-radius: 100%;
@@ -97,53 +96,51 @@
     article {
       width: 50%;
     }
+    .accordion {
+      max-width: 1050px;
+    }
 </style>
 
 
-<section id="experiencia" class="py-5 text-center bg-dark">
-  <div class="accordion container bg-dark" id="accordionExample">
+<section id="experiencia" class="py-4 text-center bg-dark">
+  <div class="accordion container text-light" id="accordionExample">
    <h2 class="title-section"><u>EXPERIÊNCIA</u></h2>
+   <div class="accordion accordion-flush" id="accordionFlushExample">
     <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
-          E2S
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          E2S CORRETORA DE SEGUROS LTDA-ME
         </button>
       </h2>
-      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
       </div>
     </div>
     <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
           UFCA
         </button>
       </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
       </div>
     </div>
     <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Estágios
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          ESTÁGIOS E TREINAMENTOS
         </button>
       </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          COLOCAR UM ACORDERON PARA CADA ESTAGIO
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
       </div>
     </div>
   </div>
+  </div>
 
   <section  id="habilidades" class="py-5 text-center container">
-   <h2 class="title-section"><u>HABILIDADES</u></h2><br>
+    <h2 class="title-section"><u>HABILIDADES</u></h2><br>
     <section id="stacks">
       <article>
         <div class="progress mx-auto" style="height: 30px; width: 500px;">
@@ -159,7 +156,6 @@
           <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><h6 class="text-white">JAVASCRIPT</h6></div>
         </div><br>
       </article>
-  
       <article>
         <div class="progress mx-auto" style="height: 30px; width: 500px;">
           <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><h6 class="text-white">PHP</h6></div>
@@ -175,31 +171,30 @@
         </div><br>
       </article>
     </section>
+    <a href="Currículo Rafael Carvalho.pdf" target="_blank" class="btn btn-primary my-2"><i class="bi bi-cloud-arrow-down-fill"></i> Currículo</a>
   </section>
 </section>
 
-
-<section id="projetos" class="py-5 text-center">            
+<section id="projetos" class="py-4 text-center">            
     <div class="container">    
      <h2 class="title-section"><u>PROJETOS</u></h2>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Site portfólio para exibição dos seus produtos/serviços e informações para contato e localização.</p>
               <ul>
-                <li>C#</li>
-                <li>Javascript</li>
-                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS / BOOTSTRAP</li>
+                <li>JAVASCRIPT</li>
+                <li>FIREBASE</li>
             </ul>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                  <a href="https://e2s-corretoradeseguros.web.app/" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
-                  <a href="https://github.com/rafaelcarvalho-git/e2sweb" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button></a>
+                  <a href="https://e2s-corretoradeseguros.web.app/" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver Site</button></a>
+                  <a href="https://github.com/rafaelcarvalho-git/e2sweb" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Código</button></a>
               </div>
-              <small class="text-muted">Projeto Web</small>
             </div>
             </div>
           </div>
@@ -207,15 +202,19 @@
         <div class="col">
           <div class="card shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Sistema Web interno para contadores e funcionarios solicitarem certificados digitais e terem informações sobre essas solicitações.</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS / BOOTSTRAP</li>
+                <li>JAVASCRIPT</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+              </ul>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <div class="btn-group">                  
+                  <a href="https://github.com/rafaelcarvalho-git/e2sweb" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Código</button></a>
                 </div>
-                <small class="text-muted">9 mins</small>
               </div>
             </div>
           </div>
@@ -224,10 +223,10 @@
     </div>               
 </section>
 
-<section id="contato" class="py-5 text-center bg-dark">
+<section id="contato" class="py-4 text-center bg-dark">
   <div class="container">
    <h2 class="title-section"><u>CONTATO</u></h2>
-    <h5 class="text-white">Disponível para novas oportunidades!</h5>
+    <h5 class="text-white" style="margin-bottom: 20px;">Disponível para novas oportunidades!</h5>
     <p>
       <a href="mailto:rafaskyplay@gmail.com" target="_blank" class="btn btn-primary my-2"><i class="bi bi-envelope"></i> Gmail</a>
       <a href="https://www.instagram.com/rafaelcarvalho.py/" target="_blank" class="btn btn-primary my-2"><i class="bi bi-instagram"></i> Instagram</a>
@@ -239,9 +238,9 @@
 </section>
 
 <footer class="text-center flex-wrap align-items-center">
-  <p class="text-white mx-auto">2022 - Desenvolvido por Rafael Carvalho</p>
+  <p class="text-white mx-auto">Desenvolvido por Rafael Carvalho</p>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-</html> 
+</html>
