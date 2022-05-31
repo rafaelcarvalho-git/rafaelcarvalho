@@ -1,0 +1,45 @@
+nav,footer{
+    background: #151515;
+    border-bottom: 2px solid #272727;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}.navbar-nav{margin-left:auto;}.devicon-img{width:36px;}
+footer{border-top:2px solid #272727;}.accordion{max-width:1050px;}
+
+.title-section {
+    color: #00d2df;
+    margin-bottom: 30px;
+}
+
+
+#home {
+    height: 500px;
+}
+
+#sobre,#projetos,.accordion-item,.accordion-button {
+    background: #131415 !important;
+    /*background: #2070bf;*/
+}
+
+
+.rafael-img {
+    border-radius: 100%;
+    border: 6px solid #00d2df;
+    width: 260px;
+    height: 230px;
+}
+
+.stacks {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 780px;
+}.stacks ul li{margin-bottom:20px;}
+#habilidades ul {
+    margin: auto;
+    width: 300px;
+    list-style: none;
+    text-align: left;
+}
+
