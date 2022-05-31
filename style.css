@@ -52,6 +52,8 @@ footer{border-top:2px solid #272727;}.accordion{max-width:1050px;}
 
 .card {
     width: 320px;
+    margin-bottom: 25px;
+    background: #212529;
 }
 .card:hover {
     -webkit-transform: scale(1.05);
