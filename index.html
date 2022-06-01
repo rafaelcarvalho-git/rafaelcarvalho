@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" integrity="sha384-eoTu3+HydHRBIjnCVwsFyCpUDZHZSFKEJD0mc3ZqSBSb6YhZzRHeiomAUWCstIWo" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">                 
   <link rel="shortcut icon" type="imagex/png" href="img/icon.ico">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -44,7 +48,7 @@
   </div>
 </section>
 
-<section class="py-4 text-center" style="background: #131415;">
+<section id="sobre" class="py-4 text-center" style="background: #131415;">
   <div class="container">
     <h2 class="title-section"><u>SOBRE MIM</u></h2>
     <p class="lead text-white">Olá meu nome é Rafael Carvalho, faço Sistemas de Informação no IFCE - Crato e estou iniciando no Desenvolvimento Web. Sou Analista de Suporte Computacional e tenho conhecimento geral em tecnologia, programação, banco de dados, segurança, hardware, software e redes. No momento estou atuando como TI e Certificador Digital, e fazendo alguns projetos como freelancer, mas procuro uma oportunidade para ingressar por inteiro no ramo de desenvolvimento web e desktop.</p>
@@ -131,77 +135,112 @@
 <section id="projetos" class="py-4 text-center">   
   <h2 class="title-section"><u>PROJETOS</u></h2>         
     <div class="container d-flex flex-wrap">               
-      <div class="card shadow-sm mx-auto text-white">            
-        <img class="bd-placeholder-img card-img-top" src="img/e2sweb.png" alt="">
-        <div class="card-body">
-          <p class="card-text">Site portfólio para exibição dos seus produtos/serviços e informações para contato e localização.</p>
-          <ul class="linguagens-utilizadas">
-            <li>HTML</li>
-            <li>CSS / BOOTSTRAP</li>
-            <li>JAVASCRIPT</li>
-            <li>FIREBASE</li>
-        </ul>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-              <a href="https://e2s-corretoradeseguros.web.app/" target="_blank"><button type="button" class="btn btn-sm btn-outline-info">Ver Site</button></a>
-              <a href="https://github.com/rafaelcarvalho-git/e2sweb" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Código</button></a>
+      <button class="pre-btn"><img src="arrow.png" alt=""></button>
+      <button class="nxt-btn"><img src="arrow.png" alt=""></button>
+      <div class="projects-container">
+          <div class="product-card">
+            <div class="card shadow-sm mx-auto text-white">            
+              <img class="bd-placeholder-img card-img-top" src="img/e2sweb.png" alt="">
+              <div class="card-body">
+                <p class="card-text">Site portfólio para exibição dos seus produtos/serviços e informações para contato e localização.</p>
+                <ul class="linguagens-utilizadas">
+                  <li>HTML</li>
+                  <li>CSS / BOOTSTRAP</li>
+                  <li>JAVASCRIPT</li>
+                  <li>FIREBASE</li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="https://e2s-corretoradeseguros.web.app/" target="_blank"><button type="button" class="btn btn-sm btn-outline-info">Ver Site</button></a>
+                    <a href="https://github.com/rafaelcarvalho-git/e2sweb" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Código</button></a>
+                </div>
+              </div>
+              </div>
+            </div>
+                 
           </div>
-        </div>
-        </div>
+          <div class="product-card">
+            <div class="card shadow-sm mx-auto text-white">
+              <img class="bd-placeholder-img card-img-top" src="img/e2scert.png" alt="">
+              <div class="card-body">
+                <p class="card-text">Sistema Web interno para os parceiros solicitarem certificados digitais e terem informações sobre essas solicitações.</p>
+                <ul class="linguagens-utilizadas">
+                  <li>HTML</li>
+                  <li>CSS / BOOTSTRAP</li>
+                  <li>JAVASCRIPT</li>
+                  <li>PHP / MYSQL</li>              
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">                                
+                    <a href="https://github.com/rafaelcarvalho-git/e2scertificadora" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Código</button></a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+              
+              
+          </div>
+          <div class="product-card">
+            <div class="card shadow-sm mx-auto text-white">
+              <img class="bd-placeholder-img card-img-top" src="img/score.png" alt="">
+              <div class="card-body">
+                <p class="card-text">Projeto desktop de um sistema para gerenciar o placar e uma partida de futebol.</p><br>
+                <ul class="linguagens-utilizadas">
+                  <li>JAVA</li>
+                  <li>SWING / WINDOWBUILDER<br><br></li>                                
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group"> 
+                    <a href="https://www.linkedin.com/posts/rafaelcarvalho-ti_java-software-activity-6895487288231497729-ToGv?utm_source=linkedin_share&utm_medium=member_desktop_web" target="_blank"><button type="button" class="btn btn-sm btn-outline-info">Ver Site</button></a>                 
+                    <a href="https://github.com/rafaelcarvalho-git/score" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Código</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>  
+           
+              
+          </div>
+          <div class="product-card">
+            <div class="card shadow-sm mx-auto text-white">
+              <img class="bd-placeholder-img card-img-top" src="img/score.png" alt="">
+              <div class="card-body">
+                <p class="card-text">Projeto desktop de um sistema para gerenciar o placar e uma partida de futebol.</p><br>
+                <ul class="linguagens-utilizadas">
+                  <li>JAVA</li>
+                  <li>SWING / WINDOWBUILDER<br><br></li>                                
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group"> 
+                    <a href="https://www.linkedin.com/posts/rafaelcarvalho-ti_java-software-activity-6895487288231497729-ToGv?utm_source=linkedin_share&utm_medium=member_desktop_web" target="_blank"><button type="button" class="btn btn-sm btn-outline-info">Ver Site</button></a>                 
+                    <a href="https://github.com/rafaelcarvalho-git/score" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Código</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          
+              
+          </div>
+          <div class="product-card">
+            <div class="card shadow-sm mx-auto text-white">
+              <img class="bd-placeholder-img card-img-top" src="img/e2scert.png" alt="">
+              <div class="card-body">
+                <p class="card-text">Sistema Web interno para os parceiros solicitarem certificados digitais e terem informações sobre essas solicitações.</p>
+                <ul class="linguagens-utilizadas">
+                  <li>HTML</li>
+                  <li>CSS / BOOTSTRAP</li>
+                  <li>JAVASCRIPT</li>
+                  <li>PHP / MYSQL</li>              
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">                                
+                    <a href="https://github.com/rafaelcarvalho-git/e2scertificadora" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Código</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>          
+              
+          </div>
       </div>
-     
-      <div class="card shadow-sm mx-auto text-white">
-        <img class="bd-placeholder-img card-img-top" src="img/e2scert.png" alt="">
-        <div class="card-body">
-          <p class="card-text">Sistema Web interno para os parceiros solicitarem certificados digitais e terem informações sobre essas solicitações.</p>
-          <ul class="linguagens-utilizadas">
-            <li>HTML</li>
-            <li>CSS / BOOTSTRAP</li>
-            <li>JAVASCRIPT</li>
-            <li>PHP / MYSQL</li>              
-          </ul>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">                                
-              <a href="https://github.com/rafaelcarvalho-git/e2scertificadora" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Código</button></a>
-            </div>
-          </div>
-        </div>
-      </div>   
-      
-      <div class="card shadow-sm mx-auto text-white">
-        <img class="bd-placeholder-img card-img-top" src="img/score.png" alt="">
-        <div class="card-body">
-          <p class="card-text">Projeto desktop de um sistema para gerenciar o placar e uma partida de futebol.</p><br>
-          <ul class="linguagens-utilizadas">
-            <li>JAVA</li>
-            <li>SWING / WINDOWBUILDER<br><br></li>                                
-          </ul>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group"> 
-              <a href="https://www.linkedin.com/posts/rafaelcarvalho-ti_java-software-activity-6895487288231497729-ToGv?utm_source=linkedin_share&utm_medium=member_desktop_web" target="_blank"><button type="button" class="btn btn-sm btn-outline-info">Ver Site</button></a>                 
-              <a href="https://github.com/rafaelcarvalho-git/score" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Código</button></a>
-            </div>
-          </div>
-        </div>
-      </div>  
-
-      <div class="card shadow-sm mx-auto text-white">
-        <img class="bd-placeholder-img card-img-top" src="img/e2scert.png" alt="">
-        <div class="card-body">
-          <p class="card-text">Sistema Web interno para os parceiros solicitarem certificados digitais e terem informações sobre essas solicitações.</p>
-          <ul class="linguagens-utilizadas">
-            <li>HTML</li>
-            <li>CSS / BOOTSTRAP</li>
-            <li>JAVASCRIPT</li>
-            <li>PHP / MYSQL</li>              
-          </ul>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">                                
-              <a href="https://github.com/rafaelcarvalho-git/e2scertificadora" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Código</button></a>
-            </div>
-          </div>
-        </div>
-      </div>  
     </div>               
 </section>
 
@@ -222,6 +261,7 @@
 <footer class="text-center flex-wrap align-items-center">
   <p class="text-white mx-auto">Desenvolvido por Rafael Carvalho</p>
 </footer>
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
